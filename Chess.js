@@ -111,9 +111,9 @@ function draw_board(){
                     var side = "w"
                 }
 
-                var img_path = "256h/" + side + "_piece" + Math.abs(BOARD[i][j]) + ".png"
+                var img_path = "256h/" + side.toLowerCase() + "_piece" + Math.abs(BOARD[i][j]) + ".png"
                 var pos = [(i+1), (j+1)];
-                var name = side + "_" + PIECE[Math.abs(BOARD[i][j])];
+                var name = side.toUpperCase() + "_" + PIECE[Math.abs(BOARD[i][j])];
                 AddImg(box[j], img_path, name, pos)
                 
             }
@@ -145,7 +145,7 @@ function resetBoard(){
                     var side = "w"
                 }
 
-                var img_path = "256h/" + side + "_piece" + Math.abs(RESET[i][j]) + ".png"
+                var img_path = "256h/" + side.toLowerCase() + "_piece" + Math.abs(RESET[i][j]) + ".png"
                 var pos = [(i+1), (j+1)];
                 var name = side.toUpperCase() + "_" + PIECE[Math.abs(RESET[i][j])];
                 AddImg(box[j], img_path, name, pos)
@@ -207,7 +207,7 @@ function prevMove(){
                         var side = "w"
                     }
 
-                    var img_path = "256h/" + side + "_piece" + Math.abs(BOARD[i][j]) + ".png"
+                    var img_path = "256h/" + side.toLowerCase() + "_piece" + Math.abs(BOARD[i][j]) + ".png"
                     var pos = [(i+1), (j+1)];
                     var name = side.toUpperCase() + "_" + PIECE[Math.abs(BOARD[i][j])];
                     AddImg(box[j], img_path, name, pos)
@@ -245,7 +245,7 @@ function update_board(new_x, new_y, old_x, old_y, side){
     temp[0].parentNode.removeChild(temp[0])
    
     box = document.querySelectorAll("div[name=row" + new_x + "] > .square")
-    var img_path = "256h/" + side + "_piece" + Math.abs(BOARD[new_x-1][new_y-1]) + ".png"
+    var img_path = "256h/" + side.toLowerCase() + "_piece" + Math.abs(BOARD[new_x-1][new_y-1]) + ".png"
     var pos = [new_x, new_y]
     var name = side.toUpperCase() + "_" + PIECE[Math.abs(BOARD[new_x-1][new_y-1])];
     AddImg(box[new_y-1], img_path, name, pos)
