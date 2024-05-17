@@ -113,7 +113,7 @@ function draw_board(){
 
                 var img_path = "256h/" + side + "_piece" + Math.abs(BOARD[i][j]) + ".png"
                 var pos = [(i+1), (j+1)];
-                var name = side.toUpperCase() + "_" + PIECE[Math.abs(BOARD[i][j])];
+                var name = side + "_" + PIECE[Math.abs(BOARD[i][j])];
                 AddImg(box[j], img_path, name, pos)
                 
             }
