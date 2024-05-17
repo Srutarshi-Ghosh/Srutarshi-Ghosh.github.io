@@ -1,0 +1,139 @@
+<html>
+    <Head>
+        <title>Chess Game</title>
+        <link rel="stylesheet" href="Chess.css">
+        
+    </Head>
+
+    <body >
+
+       <div id="top">
+            CHESS
+       </div>
+
+       <div id="holder">
+
+            <div id="fallen_pieces">
+                <div id="blackFP"></div>
+
+                <div id="whiteFP"></div>
+
+
+            </div>
+
+            <div id="game" onmousedown="setPiece(), removeHighlight()">
+        
+                <div class="row">
+                    <div class="square">   </div>
+                    <div class="square">  </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>  
+                </div>
+
+
+                <div class="row">
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>  
+                </div>
+
+
+                <div class="row">
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    
+                </div>
+
+
+                <div class="row">
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>  
+                </div>
+
+
+                <div class="row">
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>  
+                </div>
+
+
+                <div class="row">
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>  
+                </div>
+
+                <div class="row">
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>    
+                </div>
+
+                <div class="row">
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>
+                    <div class="square">    </div>  
+                </div>
+
+            </div>
+
+            <div id="controller" onclick="removeHighlight()">
+
+                <input type="text" id="turn" readonly>
+                <br>
+                <button id="previousmove" onclick="prevMove()">BACK</button>
+                <br>
+                <button id="resetboard" onclick="resetBoard()">RESET BOARD</button>
+
+            </div>
+
+        </div>
+      
+    </body>
+
+
+    <script src="Chess.js"> </script>
+
+</html>
